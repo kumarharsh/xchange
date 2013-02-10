@@ -1,0 +1,361 @@
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	background:url(images/bg.jpg) 0% 0% no-repeat;
+	background-color:#420;
+	margin:0; padding:0;
+	display:block;
+}
+
+/* Used on all pages as the parent div tag */
+#container{
+	min-width: 1024px;
+	width:100%;
+	min-height:95%;
+}
+
+
+/* The game portal page shows header content in this style */
+#header {
+	position:relative;
+	height:150px;
+	width:inherit;
+	margin:0;
+	background:url(images/back-header.png);
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/images/back-header.png');
+	background-repeat:repeat-x;
+	background-color:#000;
+}
+
+#footer{
+	clear:both;
+	position:relative;
+	height:80px;
+	margin-top:50px;
+	width:100%;
+	background:url(images/back-footer.png) repeat-x top;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/images/back-footer.png');
+	padding:15px 0 0 0;
+	text-align:center;
+	font-size:12px;
+	color:#FFF;
+	overflow: hidden;
+}
+#footer a, #footer a:hover, #footer a:visited{
+	text-decoration:none;
+	font-weight:bold;
+	color:#FFF;
+}
+#footer a:hover{
+	text-decoration:underline;
+}
+/* The game portal page shows menu content in this style */
+#menu {
+	position:relative;
+	width:inherit;
+	height:30px;
+	background-image:url(images/bar-menu.png);
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/images/bar-menu.png');
+	background-repeat:repeat-x;
+}
+/* The game portal page shows each menu element in this style */
+.menuItem {
+	position:relative;
+	float:left;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.menuItem a {
+	padding: 0.5em 0.7em 0.5em 0.7em;
+	display: block;
+	color:#CCC;
+	text-decoration:none;
+}
+
+.menuItem a:hover {
+	color:#FFF;
+	background:url(images/bar-menu-hover.png) repeat-x;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/images/bar-menu-hover.png');
+}
+
+/* All errors in the website are displyed in this style */
+#error {
+	background:url(images/back-error.png) repeat;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/images/back-error.png');
+	text-align:center;
+	font-size: small;
+	font-weight:bold;
+	width:70%;
+	margin:auto;
+	border-width: 0 2px 5px 2px;
+	border-style:hidden;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+
+/* Defines the TITLE BAR of forms*/
+#topBar {
+	position:relative;
+	text-align:center;
+	color:#FFF;
+	height:35px;
+	background:url(images/bar-form.png) repeat-x top;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/images/bar-menu-hover.png');
+	font-size:20px;
+	font-weight:bold;
+}
+
+/* The div ecapsulating the forms */
+#holder {
+	position:relative;
+	margin : 10% auto 0 auto;
+	/* The Underscore Hack for proper display in MS-IE */
+	_margin-left: 40%;
+	width:300px;
+	color:#FFF;
+	text-align:center;
+	background:url(images/back-form.png) repeat;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/images/back-form.png');
+	border-width: 0 2px 5px 2px;
+	border-style:hidden;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+}
+/* Annotations on the registration forms use this style */
+.formAnnotation {
+	margin:0px 0px 10px 190px;
+	width:400px;
+	color: #AAA;
+	font-style:italic;
+	font-size:12px;
+}
+label{
+	float: left;
+	width: 180px;
+	padding-right:10px;
+	font-weight:bold;
+	font-size:15px;
+	text-align:right;
+}
+input {
+	width: 200px;
+	margin-bottom: 5px;
+}
+/* */
+
+/* The game portal page shows different paages in this divison */
+#board {
+	margin:0 auto;
+}
+/* Styles the ticker which shows the latest prices */
+#ticker, .dmarquee {
+	height:25px;
+	background:url(images/bar-stats.png);
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#9CF;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.rankCol {
+	width:100px;
+	float:left;
+	padding:5px;
+	font-size:13px;
+}
+
+.TransCol {
+	width:60px;
+	float:left;
+	padding:2px;
+	font-size:12px;
+}
+
+/* Buttons */
+.btnClose {
+	width:83px;
+	height:15px;
+	margin:0 auto;
+}
+.btnClose a {
+	display: block;
+	width: 83px;
+	height: 15px;
+	background:url(images/transClose.gif) no-repeat top left;
+}
+.btnClose a:hover {
+	background-position: bottom left;
+}
+
+/* Login Button */
+.btnLogin {
+	width: 129px;
+	height: 29px;
+}
+.btnLogin a {
+	display: block;
+	width: 129px;
+	height: 29px;
+	background:url(images/login.gif) no-repeat top left;
+}
+.btnLogin a:hover {
+	background-position: bottom left;
+}
+
+/*Register Button */
+.btnRegister {
+	width: 129px;
+	height: 29px;
+}
+.btnRegister a {
+	display: block;
+	width: 129px;
+	height: 29px;
+	background:url(images/register.gif) no-repeat top left;
+}
+.btnRegister a:hover {
+	background-position: bottom left;
+}
+
+/* Forgot Password Button */
+.btnForgot {
+	width: 129px;
+	height: 29px;
+}
+.btnForgot a {
+	display: block;
+	width: 129px;
+	height: 29px;
+	background:url(images/forgot.gif) no-repeat top left;
+}
+.btnForgot a:hover {
+	background-position: bottom left;
+}
+
+/* Submit button */
+.btnSubmit {
+	width: 129px;
+	height: 29px;
+	margin-left:190px;
+}
+.btnSubmit a {
+	display: block;
+	width: 129px;
+	height: 29px;
+	background:url(images/submit.gif) no-repeat top left;
+}
+.btnSubmit a:hover {
+	background-position: bottom left;
+}
+
+/* The game portal page shows your progress in the game in this style */
+#yourStats{
+}
+/* On the transaction history page this encapsualtes current transaction status*/
+.closeTransaction{
+}
+
+/* CURRENCIES */
+/* Wraps each currency data on traing portal page */
+.currencyInfo {
+	background-color:#000;
+	background:url(images/back-curr.png) no-repeat bottom right;
+	position:relative;
+	float:left;
+	margin:20px;
+	width: 250px;
+}
+/* Title of each currency in trading portal */
+.currTitle {
+	position:relative;
+	background:url(images/back-curr.png) no-repeat top right;
+	width:250px;
+	margin-top:-20px;
+	font-weight:bolder;
+	font-size:large;
+	color:#FFF;
+	text-align:center;
+}
+
+/* The information labels */
+
+.currValue{
+	font-weight:bold;
+	font-size:20px;
+	text-align:center;
+	height:25px;
+}
+.currInfo{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-transform:lowercase;
+	font-weight:bold;
+	text-align:center;
+	padding-top:5px;
+}
+
+/* left & right divs */
+.currLeft, .currRight {
+	width:100px;
+	margin:10px 5px 0 10px;
+	background:url(images/back-currInfo.png);
+	height:50px;
+	float: left;
+	position:relative;
+	/*border: 1px outset #fff;
+	-moz-border-radius:15px;*/
+}
+.currRight {
+	margin:10px 10px 0 5px;
+	float: right;
+}
+
+/* Long or short currency in trading portal */
+.currButtons {
+	 clear:both;
+}
+
+.currLong, .currShort {
+	float:left;
+	width:80px;
+	margin:5px 15px 15px 20px;
+}
+.currShort {
+	float:right;
+	margin:5px 20px 15px 15px;
+}
+
+.currLong a, .currShort a {
+	display: block;
+	width: 80px;	height: 25px;
+	background:url(images/currLong.gif) no-repeat top left;
+}
+.currShort a {
+	background:url(images/currShort.gif) no-repeat top left;
+}
+
+.currLong a:hover, .currShort a:hover {
+	background-position: bottom left;
+}
+
+/* line-break for tableless forms */
+.lbr {
+	clear:left;
+}
+
+/* Spacing element */
+.pady {
+	clear: left;
+	height: 15px;
+}
+
+a img, a:hover img, a:visited img {
+	border:none;
+	text-decoration:none;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Register</title>
+<link href="css/styleIndex.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!--
+This page is the registration from for tradeFX in vivacity 2010
+ -->
+<body>
+<script type="text/javascript" src="javascript/register.js"></script>
+<div id="container">
+	<div id="header">
+	  <a href="index.php"><img src="css/images/FXlogo.png" alt="X-Change" align="left" style="padding:inherit" /></a>
+	  <a href="http://www.vivacity.lnmiit.ac.in"><img src="css/images/vivalogo2.png" alt="Vivacity 2010" height="150" style="float:right; padding:inherit" /></a>
+    </div>
+  <div id="menu">
+	<div class="menuItem"><a href="index.php">HOME</a></div>
+	<div class="menuItem"><a href="game.php?data=trading">TRADING PORTAL</a></div>
+    <div class="menuItem"><a href="index.php?data=trouble">RULES</a></div>
+    <div class="menuItem" style="float:right"><a href="register.html">REGISTER</a></div>
+  </div>  
+  <div id="holder" style="margin-top:5%; width:640px; _margin-left:auto; text-align:left"> 
+  	<div id="topBar">
+   		<font style="color:#FFF">REGISTER</font>
+    </div>
+  <div class="pady"></div>
+  <form onkeypress="if(event && event.which==13) registerMe(); else if(window.event && window.event.keyCode==13) registerMe();">
+		<label>Username</label>		<input type="text" id="username" size="30"/>
+    		<div class="formAnnotation">Username is subject to availability</div>
+		<label>Password</label>		<input type="password" id="password" size="30" maxlength="45" />
+            <div class="formAnnotation">Password should be atleast 6 characters long</div>
+    	<label>Name</label>			<input type="text" id="name" size="30" />
+      <div class="formAnnotation">&nbsp;</div>
+        <label>Phone #</label>		<input type="text" id="phone" size="30" />
+      <div class="formAnnotation">If you want SMS updates, give a Mobile Number formatted as : +91xxxxxxxxxx</div>
+        <label>College</label>		<input type="text" id="college" size="30" />
+      <div class="formAnnotation">&nbsp;</div>
+        <label>E-Mail ID</label>	<input type="text" id="email" size="30" />
+      <div class="formAnnotation">&nbsp;</div>
+        <label>Security Question</label>
+<div style="margin-bottom:5px; font-weight:bold; font-size:15px;">Who is your favourite teacher?</div>
+        <label>Your Answer</label>	<input type="text" id="question" size="30" />
+      <div class="formAnnotation">&nbsp;</div>
+        <label>Are You Human?</label><div style="margin-bottom:5px;"><img src="registration/security_generate.php" /></div>
+        	<div class="formAnnotation">Refresh the page for a new image</div>
+        <input type="text" id="captcha" size="30" style="margin-left:190px;"/>
+        	<div class="formAnnotation">Enter the letters, as you see them in the image, in the box here</div><br class="lbr" />
+	  <div id="error" style="margin-bottom:10px;"></div>
+      <div class="btnRegister" style="margin-left:190px;"><a href="#" onclick="registerMe();" ></a></div>
+      <br class="lbr" />
+	</form>
+  </div>
+  <span> </span>
+</div>
+<div id="footer">
+	This site is best viewed at a resolution of 1024x768 or better<br />
+    This site is currently runs best in <a href="www.mozilla.com/firefox">Firefox 3.0</a> | <a href="http://www.google.com/chrome">Google Chrome 3.0</a> | <a href="http://www.opera.com/download/">Opera 8+</a><br /><br />
+ 	&copy; CLUELESS 2010<br />
+</div>
+</body>
+</html>

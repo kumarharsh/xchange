@@ -1,0 +1,36 @@
+<div id="holder" style="_margin-top:5%">
+	<div id="topBar">LOGIN</div>
+<!--    <div id="loginData">
+    <form>
+	<table cellpadding="5" cellspacing="1" align="center">
+		<tr><td>Username</td><td><input name='username' type='text' id='username' value=''/></td></tr>
+		<tr><td>Password</td><td><input name='password' type='password' id='password' value='' /></td></tr>
+		<tr><td colspan="2" align="center"><div class="btnLogin"><a href="#" onclick="login();"></a></div></td></tr>
+	</table>
+    </form>
+-->
+     <form onkeypress="if(event && event.which==13) login(); else if(window.event && window.event.keyCode==13) login();">
+		<label style="width:100px;">Username</label>
+        <input style="width:150px;" name='username' type='text' id='username' value=''/>
+        <div class="pady"></div>
+		<label style="width:100px;">Password</label>
+        <input style="width:150px;" name='password' type='password' id='password' value='' />
+		<div class="pady"></div>
+        <div class="btnLogin" style="margin:10px auto 10px auto"><a href="#" onclick="login();"></a></div>
+     </form>	
+        <!--
+        
+		<div class="btnRegister" style="margin:0 5px 10px 5px"><a href="register.html"></a></div>
+		<div class="btnForgot" style="margin:0 5px 10px 5px"><a href="forgotPassword.html"></a></div>
+        <div id="error"></div>
+    </div>
+</div>-->
+	<table cellpadding="5" cellspacing="1" align="center" style="margin-top:-5px;">
+		<tr>
+			<td><div class="btnRegister"><a href="register.html"></a></div></td>
+	    	<td><div class="btnForgot"><a href="forgotPassword.html"></a></div></td>
+		</tr>
+	</table>
+    <div id="error" style="_background:none;"></div>
+	<div class="pady"></div>
+</div>

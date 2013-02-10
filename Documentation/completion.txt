@@ -1,0 +1,10 @@
+Harsh --- 
+1. the help page tabs should be a little more visible... no one will figure out tht its an accordion
+2. the logout page
+
+Manohar---
+1. toplist.php
+2. subho::i cant figure out y this is working with opera and chrome but not firefox!
+
+subho ---
+1. transactionhistory.php
